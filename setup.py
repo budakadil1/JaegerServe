@@ -39,7 +39,7 @@ parser.add_argument(
 parser.add_argument('--name', type=name_c, metavar="String", help="Name for the model which will be used for the serving links. If not supplied, Name of the parent folder of model will be used.")
 parser.add_argument('--model_conf', type=dir_file, metavar="AbsolutePath", help="Config file to specify multiple models.")
 parser.add_argument('--port', metavar="PORT", help="The port for the server. Default is 8501.", default=8501)
-parser.add_argument('--server', default="cherrypy", help="The server that Bottle will run on. Default is Bjoern, for windows installations, choose 'paste' or any other server bottle supports.")
+parser.add_argument('--server', default="paste", help="The server that Bottle will run on. Default is Bjoern, for windows installations, choose 'paste' or any other server bottle supports.")
 args = parser.parse_args()
 
 if args.file and args.name:
