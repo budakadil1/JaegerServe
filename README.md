@@ -63,9 +63,10 @@ Model config files should look like this:
 ``` path ``` : Absolute path to the model file (in the SavedModel format)
 
 For example, if you have three models, your modelconfig.txt file will look like this:
-model, mikasa, models/img_classifier/1609189008
 
-model, jaeger, models/linearmodels/version1
+```model, mikasa, models/img_classifier/1609189008```
+
+```model, jaeger, models/linearmodels/version1```
 
 The server will serve these models at
 
